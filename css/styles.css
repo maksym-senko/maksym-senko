@@ -1,6 +1,5 @@
 body {
-  background: #c2c2c2;
-  padding: 40px 40px 40px 40px;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -14,13 +13,13 @@ ol {
   background: #ffffff;
   display: flex;
   flex-direction: row-reverse;
-  width: 1000px;
+
   margin: 0 auto;
 }
 
 /* Main content */
 .main-content {
-  padding: 88px 80px 40px 80px;
+  padding: 35px;
   box-sizing: border-box;
 }
 
@@ -34,10 +33,21 @@ ol {
 }
 
 .sidebar-content {
-  padding-left: 40px;
-  padding-top: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-right: 30px;
   box-sizing: border-box;
+}
+
+.my_photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 0 20px;
+  background-image: url(../img/my_photo.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 85%;
 }
 
 .icon {
@@ -54,10 +64,10 @@ ol {
   font-weight: 700;
   line-height: normal;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
-.contect-type {
+.contact-type {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -66,24 +76,42 @@ ol {
 
 .contacts-link {
   color: #ffffff;
+  font-weight: 400;
   font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  opacity: 0.5;
+  line-height: 171%;
+  text-decoration: none; /* Добавлено, щоб не було підкреслення */
 }
 
 .contacts-item {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
-.contects-container {
+.contacts-container {
   margin-bottom: 40px;
+  width: 250px;
+}
+
+.contacts-item:hover .contacts-link {
+  opacity: 1; /* При наведенні збільшуємо непрозорість */
+}
+
+.icon {
+  margin-right: 8px; /* Додаємо відступ між іконкою та текстом */
+  vertical-align: middle;
+}
+
+.fab,
+.fas {
+  margin-right: 8px; /* Відступ для іконок */
+  vertical-align: middle;
+  color: #fb6d3a;
 }
 
 /* Skills container */
 .skills-container {
   margin-bottom: 40px;
+  width: 250px;
 }
 
 .skills-title {
@@ -108,6 +136,10 @@ ol {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
+  margin-bottom: 12px;
+}
+.skill {
+  margin-bottom: 12px;
 }
 
 /* Main content */
@@ -130,65 +162,106 @@ ol {
 }
 
 .my-descr {
-  color: #595959;
+  color: #777777;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-align: justify;
 }
 
-.my-info {
-  margin-bottom: 40px;
+/* My Projects Section */
+.my-projects-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-/* My projects */
 .my-projects-title {
   color: #000;
   font-size: 22px;
   font-weight: 700;
-  line-height: 27px;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.my-projects-item {
-  color: #000;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
+  margin-bottom: 10px;
 }
 
 .my-projects-list {
-  padding-left: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.my-projects-item-link {
-  color: #595959;
-  font-size: 14px;
+.my-projects-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #777777; /* М'який сірий текст для проектів */
+}
+
+.my-projects-item a.my-projects-item-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.my-projects-item a.my-projects-item-link:hover {
+  color: #fb6d3a; /* Темно-синій колір при наведенні */
+}
+
+.work-experiance-duties-item {
+  font-weight: 600;
+  color: #333333; /* Текст більш темний для заголовків */
+}
+
+.work-experiance-period-separator {
+  color: #333333;
+}
+
+.project-details {
+  color: #777777; /* Світло-сірий для менш важливого тексту */
+  margin-top: 4px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+  line-height: 15px;
+  margin-bottom: 6px;
 }
 
-.my-projects-item-tech {
-  color: #595959;
+.project-description {
   font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
+  color: #777777;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-.my-projects-container {
-  margin-bottom: 40px;
+.project-link {
+  font-size: 14px;
+  color: #777777;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0;
 }
 
-/* Work experience */
+.project-link i {
+  margin-right: 5px;
+}
+
+.project-link:hover {
+  color: #fb6d3a;
+}
+
+.project-link:active {
+  color: #ffbf00;
+}
+
+/* Work Experience */
 .work-experianse-title {
   color: #000;
   font-size: 22px;
   font-weight: 700;
   line-height: 27px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 22px;
+  margin-bottom: 10px;
 }
 
 .work-experiance-company {
@@ -196,8 +269,8 @@ ol {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .company-name {
@@ -205,11 +278,11 @@ ol {
 }
 
 .work-experiance-period {
-  color: #a8a8a8;
+  color: #777777;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .work-experiance-period-separator {
@@ -217,24 +290,25 @@ ol {
 }
 
 .work-experiance-duties-list {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .work-experiance-duties-item {
-  color: #595959;
+  color: #777777;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 4px;
 }
 
 .work-experiance-container-company {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .work-experience-container {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* Education */
@@ -246,8 +320,8 @@ ol {
   color: #000;
   font-size: 22px;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin-top: 22px;
+  margin-bottom: 10px;
 }
 
 .education-university {
@@ -258,18 +332,19 @@ ol {
   margin-bottom: 8px;
 }
 
-.education-profrsional {
+.education-professional {
   color: #000;
   font-size: 14px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .education-experiance-period {
-  color: #a8a8a8;
+  color: #777777;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
   margin-top: 0;
+  margin-bottom: 15px;
 }
