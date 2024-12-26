@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Maksym Senko</h1>
-<h3 align="center">Junior Front-End Developer skilled in HTML5, CSS3, JavaScript, and React. Creates responsive websites with clean code. Passionate about learning new technologies and delivering engaging, seamless user experiences</h3>
+<h3 align="center">Junior Front-End Developer skilled in HTML5, CSS3, JavaScript, and React. Create responsive websites with clean code. Passionate about learning new technologies and delivering engaging, seamless user experiences</h3>
 
 -   Junior Front-end Developer [GoIT - start your career in IT](https://www.edu.goit.global/uk)
 
